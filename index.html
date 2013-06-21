@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>JSConf 2013 - Track B - Distributed Nodejs Adventures</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Nodejs <stuff> cool <more stuff> distributed foobar">
+		<meta name="author" content="Daniel Tralamazza">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -28,6 +28,27 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<style>
+			.image {
+				position: relative;
+				widows: 100%;
+			}
+			.image-webkit {
+    		width: 120px;
+    		height: auto;
+			}
+			.across {
+				left: 0;
+				position: absolute;
+				width: 100%;
+				top: 200px;
+				-webkit-transform: rotate(-35deg);
+				-moz-transform: rotate(-35deg);
+				-ms-transform: rotate(-35deg);
+				-o-transform: rotate(-35deg);
+			}
+		</style>
 	</head>
 
 	<body>
@@ -37,294 +58,246 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
+				<!-- title -->
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h1>Nodejs</h1>
+					<h3>Distributed adventures</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>created by <a href="http://twitter.com/tralamazza" target="_blank">@tralamazza</a></small>
+					</p>
+				</section>
+
+				<!-- shameless plug disclaimer -->
+				<section>
+					<h2>Disclaimer</h2>
+					<p>
+						<div class="image">
+							<img src="images/640px-Spark_plugs.jpg">
+							<div style="font-size: 5em; opacity:0.6; color: red;" class="across">Shameless</div>
+							<div style="font-size: 0.4em;">
+								<a href="http://www.flickr.com/photos/aidanwojtas/2867017749/">Spark Plugs by Aidan Wojtas</a>
+							</div>
+						</div>
+					</p>
+					<aside class="notes">Spark Plugs by Aidan Wojtas http://www.flickr.com/photos/aidanwojtas/2867017749/</aside>
+				</section>
+
+				<!-- who am I -->
+				<section>
+					<h2>Minion @</h2>
+					<img src="images/BugBusterHI.png">
+				</section>
+
+				<!-- -->
+				<section>
+					<h2>We do</h2>
+					<h3>Automatic software testing</h3>
+					<p>
+						<div class="fragment"><img class="image-webkit" src="images/WebKit_logo.png"></div>
+						<div class="fragment">Instrumented JavaScriptCore</div>
+						<div class="fragment">Dynamic Analysis Black Magic</div>
+						<div class="fragment">On the <div class="fragment grow"><div class="fragment grow">Cloud</div></div></div>
 					</p>
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
+					<h2>Server</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li>THE middleware</li>
+						<li class="fragment">SES</li>
+						<li class="fragment">SNS</li>
+						<li class="fragment">Cloudfront</li>
+						<li class="fragment">S3</li>
+						<li class="fragment">Mixpanel</li>
+						<li class="fragment">SQL</li>
+						<li class="fragment">Redis ...</li>
+						<li class="fragment">20k LoC</li>
+						<li class="fragment">npm-shrinkwrap.json ~ 23KB</li>
+					</ul>
+					<aside class="notes">Reduced from ~30k</aside>
+				</section>
+
+<!-- 				<section>
+					<h2>Make things simpler</h2>
+					<div>please ignore the cognitive dissonance for a second</div>
+					<div class="fragment">by breaking them into smaller thingies</div>
+				</section>
+ -->
+				<section>
+					<h2>Distributed Applications</h2>
+					<ul>
+						<li class="fragment">error prone</li>
+						<li class="fragment">hard to get it right</li>
+						<li class="fragment">difficult difficult lemon difficult</li>
+						<li class="fragment">... and so on and so on (Slavoj Žižek &#0153;)</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+					<h2>A Rover in Mars</h2>
+					<h3>Still trying to name things</h3>
+					<ul>
+						<li class="fragment">mDNS</li>
+						<li class="fragment">DNS-SD</li>
+						<li class="fragment">SSDP (MS)</li>
+						<li class="fragment">Bonjour (Apple)</li>
+						<li class="fragment">SLP (hahaha)</li>
+						<li class="fragment">DHCP (!!!)</li>
+					</ul>
+					<aside class="notes">1997 tech</aside>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+				<!-- a messy history -->
+				<!-- SLP 97 -_- -->
+				<!-- mdns, Not the mDNS We Deserve, But the mDNS We Need -->
+				<!-- error unknowns ahoy, libcompat -->
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> -
-						<a href="?#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
+				<!-- I <3 sugar -->
+				<!-- dnode passes occam's razor -->
+				<section>
+					<h2>dnode</h2>
+					<p>Well known stream based RPC solution.</p>
+					<img src="images/dnode.png">
+					<p class="fragment">It just works [tm].</p>
 				</section>
 
 				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This lets you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#" class="image navigate-next">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
-						</a>
-					</section>
+					<h2>dservice</h2>
+					<h5>or how I can't name things</h5>
+					<ul>
+						<li>Stream (dnode) based</li>
+						<li>Remote dependencies</li>
+						<li>Self healing, load balanced, and so on and so on</li>
+						<li>Semver'd</li>
+					</ul>
+					<aside class="notes">similar to hook.io</aside>
 				</section>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+				<!-- object discovery -->
 
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
+					<h2>A Dnode server</h2>
 					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+// var dnode = require('dnode');
+var dservice = require('dservice');
 
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) ) {
-        node.className += ' roll';
-      }
-    };
+// var server = dnode({
+var server = dservice('d1', {
+  transform: function (s, cb) {
+    cb(s.replace(/[aeiou]{2,}/, 'oo').toUpperCase());
   }
-}
+});
+// server.listen(5004);
+server.start();
 					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
 
 				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
+					<h2>and its client</h2>
+					<pre><code data-trim contenteditable>
+var dservice = require('dservice');
+
+var service = dservice();
+service.dnodeFor('d1', function (err, remote, d) {
+  remote.transform('beep', function (s) {
+    console.log('beep => ' + s);
+    d.end();
+  });
+});
+					</code></pre>
 				</section>
 
 				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+					<h2>Remote dependencies</h2>
+					<pre><code data-trim contenteditable>
+var dservice = require('dservice');
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
+var server = dservice('d2', {
+  jsconf: function (cb) {
+    server.dnodeFor('d1', function (err, remote, d) {
+      remote.transform('rulez', cb);
+    });
+  }
+});
+server.rely('d1');
+server.start();
+					</code></pre>
 				</section>
+	
+				<!-- demo, just export -->
+				<!-- demo, export + rely -->
+				<!-- demo, export + rely + reconnect -->
 
+				<!-- wip, OpenSLP module -->
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
+					<h2>[WiP]</h2>
 					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
+						<li>Cycle detection</li>
+						<li>Multiple engines</li>
+						<li>package.json hack: RemoteDependency</li>
+					</ul>
+				</section>
+				<!-- future, package.json hack: RemoteDependency -->
+
+				<section>
+					<h2>Streams vs Transactions</h2>
+					<ul>
+						<li>Streams are composable, awesome, etc</li>
+						<li class="fragment">Don't solve all the problems</li>
+						<li class="fragment">You will buffer</li>
+						<li class="fragment">Sometimes you have to repeat operations</li>
+					</ul>
+					<aside class="notes">streams are nodejs poster child</aside>
+				</section>
+
+				<!-- if we have time, lets talk about pipelines -->
+				<section>
+					<h2>Transactional behaviour</h2>
+					<ul>
+						<li>I want repeatable operations</li>
+						<li>I want durability</li>
+						<li class="fragment">and I specially want Sugar[TM]</li>
 					</ul>
 				</section>
 
 				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<h2>How it works?</h2>
+					<ul>
+						<li>user implements idempotent steps</li>
+						<li>serialize your command</li>
+						<li>1 input + 2 working queue per step</li>
+						<li>handles timeouts and retries</li>
+					</ul>
+					<aside class="notes">enqueue/dequeue atomic operations</aside>
+				</section>
+
+				<section>
+					<h2>Implementing a step</h2>
+					<pre><code data-trim contenteditable>
+var dns = require('dns');
+function MyResolveStep(logger, pipeline) {
+  var self = this;
+  self.input_queue = 'my_input_queue';
+  self.execute = function (payload, done) {
+    dns.resolve(payload.data.address, function (err, addresses) {
+      done(err, addresses, err ? 'my_resolved_addr_q' : 'my_error_q');
+    });
+  };
+  return self;
+}
+module.exports = MyResolveStep;
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Everything to be open sourced</h2>
+					<div style="font-size: xx-large;">\o/</div>
+				</section>
+
+				<section>
+					<h2>So Long</h2>
+					<h3>and Thanks for all the Fish</h3>
+					<img src="images/BugBusterHI.png">
 				</section>
 
 			</div>
@@ -344,8 +317,8 @@ function linkify( selector ) {
 				history: true,
 				center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				theme: Reveal.getQueryHash().theme || 'solarized', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
